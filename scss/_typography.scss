@@ -1,0 +1,29 @@
+.button {
+  font-size: $fs-14;
+}
+
+.heading {
+  font-weight: bold;
+  line-height: 1.2;
+  color: $c-p-blue;
+  letter-spacing: -0.2rem;
+}
+
+h1,
+.heading-1 {
+  font-size: $fs-40;
+}
+
+.h2,
+.heading-2 {
+  letter-spacing: -0.15rem;
+  font-size: $fs-32;
+}
+
+p {
+  color: $c-g-200;
+
+  &.bold {
+    font-weight: 700;
+  }
+}

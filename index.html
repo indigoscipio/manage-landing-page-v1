@@ -12,50 +12,119 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | Manage landing page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <title>Manage Landing Page</title>
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <!-- Pricing
-  Product
-  About Us
-  Careers
-  Community
+    <header class="header">
+      <div class="container flex">
+        <div class="header__logo">
+          <img src="images/logo.svg" alt="" />
+        </div>
+        <ul class="header__menu">
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Community</a></li>
+        </ul>
+        <div class="header__cta">
+          <button class="button button--red">Get Started</button>
+        </div>
+        <div class="header__hamburger">
+          <span class="line line-1"></span>
+          <span class="line line-1"></span>
+          <span class="line line-1"></span>
+        </div>
+      </div>
+    </header>
 
-  Get Started
+    <section class="hero">
+      <div class="container flex">
+        <div class="hero__text flex flow">
+          <h1 class="heading heading-1">
+            Bring everyone together to build better products.
+          </h1>
+          <p>
+            Manage makes it simple for software teams to plan day-to-day tasks
+            while keeping the larger team goals in view.
+          </p>
+          <button class="button button--red">Get Started</button>
+        </div>
+        <div class="hero__image">
+          <img src="images/illustration-intro.svg" alt="" />
+        </div>
+      </div>
+    </section>
 
-  Bring everyone together to build better products.
+    <section class="features">
+      <div class="container container-py flex">
+        <div class="features__intro flex flow">
+          <h2 class="heading heading-2">What’s different about Manage?</h2>
+          <p>
+            Manage provides all the functionality your team needs, without the
+            complexity. Our software is tailor-made for modern digital product
+            teams.
+          </p>
+        </div>
+        <div class="features__list">
+          <div class="features__list-item">
+            <div class="label-number">01</div>
+            <p class="bold">Track company-wide progress</p>
+            <p>
+              See how your day-to-day tasks fit into the wider vision. Go from
+              tracking progress at the milestone level all the way done to the
+              smallest of details. Never lose sight of the bigger picture again.
+            </p>
+          </div>
+          <div class="features__list-item">
+            <div class="label-number">02</div>
+            <p class="bold">Advanced built-in reports</p>
+            <p>
+              Set internal delivery estimates and track progress toward company
+              goals. Our customisable dashboard helps you build out the reports
+              you need to keep key stakeholders informed.
+            </p>
+          </div>
+          <div class="features__list-item">
+            <div class="label-number">03</div>
+            <p class="bold">Advanced built-in reports</p>
+            <p>
+              Stop jumping from one service to another to communicate, store
+              files, track tasks and share documents. Manage offers an
+              all-in-one team productivity solution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  Manage makes it simple for software teams to plan day-to-day 
-  tasks while keeping the larger team goals in view.
+    <section class="testimonials">
+      <div class="testimonials__title"></div>
+      <div class="testimonials__slider">
+        <div class="card">
+          <div class="card__profile">
+            <img src="images/avatar-ali.png" alt="" />
+          </div>
+          <div class="card__name">Ali Bravo</div>
+          <div class="card__quote">
+            “We have been able to cancel so many other subscriptions since using
+            Manage. There is no more cross-channel confusion and everyone is
+            much more focused.”
+          </div>
+        </div>
 
-  Get Started
+        <div class="testimonials__indicator">
+          <span class="dot"></span>
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <button class="button button--red">Get Started</button>
+      </div>
+    </section>
 
-  What’s different about Manage?
-
-  Manage provides all the functionality your team needs, without 
-  the complexity. Our software is tailor-made for modern digital 
-  product teams. 
-
-  01
-  Track company-wide progress
-  See how your day-to-day tasks fit into the wider vision. Go from 
-  tracking progress at the milestone level all the way done to the 
-  smallest of details. Never lose sight of the bigger picture again.
-
-  02
-  Advanced built-in reports
-  Set internal delivery estimates and track progress toward company 
-  goals. Our customisable dashboard helps you build out the reports 
-  you need to keep key stakeholders informed.
-
-  03
-  Everything you need in one place
-  Stop jumping from one service to another to communicate, store files, 
-  track tasks and share documents. Manage offers an all-in-one team 
-  productivity solution.
-
+    <!--
   What they’ve said
 
   Anisha Li
@@ -92,12 +161,6 @@
   Go
 
   Copyright 2020. All Rights Reserved -->
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <script src="script.js"></script>
   </body>
 </html>
