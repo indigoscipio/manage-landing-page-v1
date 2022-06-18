@@ -51,6 +51,10 @@ body {
   font-size: $fs-16;
   color: $c-g-300;
   font-family: "Be Vietnam Pro", sans-serif;
+
+  &.locked {
+    overflow: hidden;
+  }
 }
 
 /* A elements that don't have a class get default styles */
