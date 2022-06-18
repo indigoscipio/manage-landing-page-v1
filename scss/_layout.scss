@@ -188,33 +188,33 @@
       }
     }
 
-    // &::before {
-    //   content: "";
-    //   position: absolute;
-    //   z-index: -1;
-    //   background-image: url(../images/bg-tablet-pattern.svg);
-    //   top: 0;
-    //   background-repeat: no-repeat;
-    //   left: 0;
-    //   background-size: 120%;
-    //   background-position: 90px -110px;
-    //   width: 100%;
-    //   height: 100%;
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      background-image: url(../images/bg-tablet-pattern.svg);
+      top: 0;
+      background-repeat: no-repeat;
+      left: 0;
+      background-size: 120%;
+      background-position: 90px -110px;
+      width: 100%;
+      height: 100%;
 
-    //   @include lg {
-    //     content: "";
-    //     position: absolute;
-    //     z-index: -1;
-    //     background-image: url(../images/bg-tablet-pattern.svg);
-    //     top: 0;
-    //     background-repeat: no-repeat;
-    //     left: 0;
-    //     background-size: 60%;
-    //     background-position: 770px -170px;
-    //     width: 100%;
-    //     height: 100%;
-    //   }
-    // }
+      @include lg {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background-image: url(../images/bg-tablet-pattern.svg);
+        top: 0;
+        background-repeat: no-repeat;
+        left: 0;
+        background-size: 860px;
+        background-position: 814px -150px;
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }
 
@@ -274,6 +274,10 @@
     color: $c-p-blue;
 
     @include md {
+      margin-left: 1.6rem;
+    }
+
+    @include lg {
       margin-left: 0;
     }
   }
@@ -464,6 +468,7 @@
     @include lg {
       justify-self: start;
       gap: 1.6rem;
+      align-self: start;
     }
 
     img {
@@ -485,13 +490,14 @@
 }
 
 //BG Elements
+
 .background-2 {
   position: absolute;
-  top: 1250px;
-  left: -390px;
-  z-index: -1;
-  // background-image: url(../images/bg-tablet-pattern.svg);
-  // width: 100%;
-  // height: 100%;
-  // position: absolute;
+  display: none;
+
+  @include lg {
+    top: 1250px;
+    left: -390px;
+    z-index: -1;
+  }
 }

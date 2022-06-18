@@ -106,6 +106,10 @@ select {
   padding: 0.8rem 2.4rem;
   border-radius: 100px;
   border: 0; }
+  #input-email.invalid {
+    border: 2px solid #f25f3a; }
+  #input-email.valid {
+    border: 2px solid palegreen; }
 
 .container {
   max-width: 110rem;
@@ -245,6 +249,31 @@ select {
     @media screen and (min-width: 62.375em) {
       .hero__image img {
         margin-left: auto; } }
+    .hero__image::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      background-image: url(../images/bg-tablet-pattern.svg);
+      top: 0;
+      background-repeat: no-repeat;
+      left: 0;
+      background-size: 120%;
+      background-position: 90px -110px;
+      width: 100%;
+      height: 100%; }
+      @media screen and (min-width: 62.375em) {
+        .hero__image::before {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          background-image: url(../images/bg-tablet-pattern.svg);
+          top: 0;
+          background-repeat: no-repeat;
+          left: 0;
+          background-size: 860px;
+          background-position: 814px -150px;
+          width: 100%;
+          height: 100%; } }
 
 .features .container {
   gap: 6.4rem;
@@ -286,6 +315,9 @@ select {
   margin-left: 0.8rem;
   color: #242d52; }
   @media screen and (min-width: 48em) {
+    .features p.bold {
+      margin-left: 1.6rem; } }
+  @media screen and (min-width: 62.375em) {
     .features p.bold {
       margin-left: 0; } }
 
@@ -412,7 +444,8 @@ select {
     @media screen and (min-width: 62.375em) {
       .footer__socials {
         justify-self: start;
-        gap: 1.6rem; } }
+        gap: 1.6rem;
+        align-self: start; } }
     .footer__socials img {
       width: 3.2rem; }
       @media screen and (min-width: 62.375em) {
@@ -429,9 +462,12 @@ select {
 
 .background-2 {
   position: absolute;
-  top: 1250px;
-  left: -390px;
-  z-index: -1; }
+  display: none; }
+  @media screen and (min-width: 62.375em) {
+    .background-2 {
+      top: 1250px;
+      left: -390px;
+      z-index: -1; } }
 
 .button {
   font-size: 1.4rem; }
