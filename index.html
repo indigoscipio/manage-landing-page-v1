@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+    <div class="background-2">
+      <img src="./images/bg-tablet-pattern.svg" alt="" />
+    </div>
     <div class="menu-overlay"></div>
     <header class="header">
       <div class="container flex">
@@ -41,7 +44,7 @@
     </header>
 
     <section class="hero">
-      <div class="container flex">
+      <div class="container flex container-py">
         <div class="hero__text flex flow">
           <h1 class="heading heading-1">
             Bring everyone together to build better products.
@@ -104,27 +107,86 @@
       <div class="container flex flow">
         <h2 class="heading heading-2">What They've Said</h2>
         <div class="testimonials__slider">
-          <div class="card">
-            <div class="card__profile">
-              <img src="images/avatar-ali.png" alt="" />
+          <div class="slider-controller">
+            <div class="card">
+              <div class="card__profile">
+                <img src="images/avatar-ali.png" alt="" />
+              </div>
+              <p class="card__name bold">Ali Bravo</p>
+              <p class="card__quote">
+                “We have been able to cancel so many other subscriptions since
+                using Manage. There is no more cross-channel confusion and
+                everyone is much more focused.”
+              </p>
             </div>
-            <p class="card__name bold">Ali Bravo</p>
-            <p class="card__quote">
-              “We have been able to cancel so many other subscriptions since
-              using Manage. There is no more cross-channel confusion and
-              everyone is much more focused.”
-            </p>
+            <div class="card">
+              <div class="card__profile">
+                <img src="images/avatar-anisha.png" alt="" />
+              </div>
+              <p class="card__name bold">Anisha Li</p>
+              <p class="card__quote">
+                “Manage has supercharged our team’s workflow. The ability to
+                maintain visibility on larger milestones at all times keeps
+                everyone motivated.”
+              </p>
+            </div>
+            <div class="card">
+              <div class="card__profile">
+                <img src="images/avatar-richard.png" alt="" />
+              </div>
+              <p class="card__name bold">Richard Watts</p>
+              <p class="card__quote">
+                “Manage allows us to provide structure and process. It keeps us
+                organized and focused. I can’t stop recommending them to
+                everyone I talk to!”
+              </p>
+            </div>
+            <div class="card">
+              <div class="card__profile">
+                <img src="images/avatar-shanai.png" alt="" />
+              </div>
+              <p class="card__name bold">Shanai Gough</p>
+              <p class="card__quote">
+                “Their software allows us to track, manage and collaborate on
+                our projects from anywhere. It keeps the whole team in-sync
+                without being intrusive.”
+              </p>
+            </div>
           </div>
         </div>
         <div class="testimonials__indicator">
-          <input class="radio" id="item-1" type="radio" name="testimonials" />
+          <input
+            class="radio"
+            id="item-1"
+            type="radio"
+            name="testimonials"
+            data-index="1"
+          />
           <label for="item-1" class="dot"></label>
-          <input class="radio" id="item-2" type="radio" name="testimonials" />
+          <input
+            class="radio"
+            id="item-2"
+            type="radio"
+            name="testimonials"
+            data-index="2"
+          />
           <label for="item-2" class="dot"></label>
-          <input class="radio" id="item-3" type="radio" name="testimonials" />
+          <input
+            class="radio"
+            id="item-3"
+            type="radio"
+            name="testimonials"
+            data-index="3"
+          />
           <label for="item-3" class="dot"></label>
-          <input class="radio" id="item-4" type="radio" name="testimonials" />
-          <label for="item-5" class="dot"></label>
+          <input
+            class="radio"
+            id="item-4"
+            type="radio"
+            name="testimonials"
+            data-index="4"
+          />
+          <label for="item-4" class="dot"></label>
         </div>
         <button class="button button--red">Get Started</button>
       </div>
