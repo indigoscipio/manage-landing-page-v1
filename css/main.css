@@ -98,6 +98,13 @@ select {
   text-align: center;
   display: inline-block; }
 
+#input-email {
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.8rem 2.4rem;
+  border-radius: 100px;
+  border: 0; }
+
 .container {
   padding-left: 2.4rem;
   padding-right: 2.4rem; }
@@ -220,6 +227,86 @@ select {
     background-color: #ffefeb;
     z-index: -1;
     border-radius: 100px; }
+
+.testimonials {
+  text-align: center; }
+  .testimonials .container {
+    flex-direction: column;
+    --gap: 4rem;
+    padding-top: 4.8rem;
+    padding-bottom: 4.8rem; }
+  .testimonials .heading {
+    margin-bottom: 4rem; }
+  .testimonials .card {
+    background-color: #fafafa;
+    border-radius: 0.4rem;
+    padding: 2.4rem;
+    position: relative; }
+    .testimonials .card__profile {
+      position: absolute;
+      width: 7.2rem;
+      top: -32px;
+      left: 50%;
+      transform: translateX(-50%); }
+    .testimonials .card__name {
+      color: #242d52;
+      padding: 3.2rem 0; }
+    .testimonials .card__quote {
+      font-size: 1.4rem; }
+  .testimonials__indicator {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: center; }
+    .testimonials__indicator span {
+      display: block;
+      height: 8px;
+      width: 8px;
+      border-radius: 100px;
+      border: 1px solid #f25f3a; }
+  .testimonials .button {
+    align-self: center; }
+
+.call-to-action {
+  text-align: center;
+  background-color: #f25f3a; }
+  .call-to-action .container {
+    flex-direction: column; }
+  .call-to-action h1 {
+    color: white; }
+  .call-to-action .button {
+    align-self: center; }
+
+.footer {
+  background-color: #1d1e25; }
+  .footer .container {
+    display: grid;
+    justify-items: center;
+    grid-template-rows: repeat(5, min-content);
+    grid-row-gap: 4rem;
+    grid-template-areas: "form" "links" "socials" "logo" "copyright"; }
+  .footer__form {
+    grid-area: form; }
+  .footer__links {
+    column-gap: 4.8rem;
+    row-gap: 1.6rem;
+    grid-area: links;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    .footer__links a {
+      color: #fafafa; }
+  .footer__logo {
+    grid-area: logo; }
+  .footer__socials {
+    grid-area: socials;
+    justify-content: center;
+    gap: 3.2rem; }
+    .footer__socials img {
+      width: 3.2rem; }
+  .footer__copyright {
+    grid-area: copyright;
+    text-align: center;
+    font-size: 1.2rem; }
 
 .button {
   font-size: 1.4rem; }

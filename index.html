@@ -100,30 +100,76 @@
     </section>
 
     <section class="testimonials">
-      <div class="testimonials__title"></div>
-      <div class="testimonials__slider">
-        <div class="card">
-          <div class="card__profile">
-            <img src="images/avatar-ali.png" alt="" />
-          </div>
-          <div class="card__name">Ali Bravo</div>
-          <div class="card__quote">
-            “We have been able to cancel so many other subscriptions since using
-            Manage. There is no more cross-channel confusion and everyone is
-            much more focused.”
+      <div class="container flex flow">
+        <h2 class="heading heading-2">What They've Said</h2>
+        <div class="testimonials__slider">
+          <div class="card">
+            <div class="card__profile">
+              <img src="images/avatar-ali.png" alt="" />
+            </div>
+            <p class="card__name bold">Ali Bravo</p>
+            <p class="card__quote">
+              “We have been able to cancel so many other subscriptions since
+              using Manage. There is no more cross-channel confusion and
+              everyone is much more focused.”
+            </p>
           </div>
         </div>
-
         <div class="testimonials__indicator">
-          <span class="dot"></span>
-          <span class="dot active"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
+          <input class="radio" id="item-1" type="radio" name="testimonials" />
+          <label for="item-1" class="dot"></label>
+          <input class="radio" id="item-2" type="radio" name="testimonials" />
+          <label for="item-2" class="dot"></label>
+          <input class="radio" id="item-3" type="radio" name="testimonials" />
+          <label for="item-3" class="dot"></label>
+          <input class="radio" id="item-4" type="radio" name="testimonials" />
+          <label for="item-5" class="dot"></label>
         </div>
         <button class="button button--red">Get Started</button>
       </div>
     </section>
 
+    <section class="call-to-action">
+      <div class="container flex flow container-py">
+        <h1 class="heading heading-1 text-white">
+          Simplify how your team works today.
+        </h1>
+        <button class="button button--white">Get Started</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container container-py">
+        <form class="footer__form">
+          <input
+            placeholder="Enter your email..."
+            id="input-email"
+            type="email"
+          />
+          <button class="button button--red">GO</button>
+        </form>
+        <ul class="footer__links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <div class="footer__socials flex">
+          <a href="#"><img src="images/icon-facebook.svg" alt="" /></a>
+          <a href="#"><img src="images/icon-youtube.svg" alt="" /></a>
+          <a href="#"><img src="images/icon-twitter.svg" alt="" /></a>
+          <a href="#"><img src="images/icon-pinterest.svg" alt="" /></a>
+          <a href="#"><img src="images/icon-instagram.svg" alt="" /></a>
+        </div>
+        <div class="footer__logo">
+          <img src="images/logo-white.svg" alt="" />
+        </div>
+        <p class="footer__copyright">Copyright 2020. All Rights Reserved</p>
+      </div>
+    </footer>
     <!--
   What they’ve said
 
@@ -149,13 +195,7 @@
   Simplify how your team works today.
   Get Started
 
-  Home
-  Pricing
-  Products
-  About Us
-  Careers
-  Community
-  Privacy Policy
+
 
   Updates in your inbox…
   Go
