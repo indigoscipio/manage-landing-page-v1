@@ -102,14 +102,23 @@ select {
   color: white;
   font-weight: bold;
   box-shadow: #{$bs-darkred};
+  transition: all 0.3s ease;
 
   &--red {
     background-color: $c-p-red;
+
+    &:hover {
+      background-color: lighten($c-p-red, 10%);
+    }
   }
 
   &--white {
     background-color: white;
     color: $c-p-red;
+
+    &:hover {
+      background-color: darken(white, 10%);
+    }
   }
 }
 

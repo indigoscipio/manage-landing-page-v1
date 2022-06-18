@@ -110,6 +110,10 @@
 
     li {
       padding: 1.6rem 0;
+
+      a:hover {
+        color: $c-g-200;
+      }
     }
 
     @include lg {
